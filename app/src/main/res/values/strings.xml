@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">appmovilcaso1</string>
+    <string name="app_name">STARMOTORS</string>
+    <string-array name="vehiculos">
+
+        <item>TOYOTA</item>
+        <item>MAZDA</item>
+    </string-array>
 </resources>

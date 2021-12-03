@@ -7,24 +7,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class mensaje extends AppCompatActivity {
 
-    Button cotizar;
-
+    Button inicio;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        cotizar = (Button)findViewById(R.id.bnt_cotizar);
+        setContentView(R.layout.activity_mensaje);
 
-        cotizar.setOnClickListener(new View.OnClickListener() {
+        inicio = (Button)findViewById(R.id.bnt_inicio);
+
+        inicio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, cotizar.class);
+                Intent i = new Intent(mensaje.this, MainActivity.class);
                 startActivity(i);
             }
         });
     }
-
-
 }

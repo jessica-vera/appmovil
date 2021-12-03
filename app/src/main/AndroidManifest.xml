@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Appmovilcaso1">
+        <activity android:name=".mensaje"></activity>
+        <activity android:name=".detallevehiculo" />
+        <activity android:name=".cotizar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

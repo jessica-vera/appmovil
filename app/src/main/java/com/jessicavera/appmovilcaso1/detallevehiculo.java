@@ -7,24 +7,22 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class detallevehiculo extends AppCompatActivity {
 
-    Button cotizar;
-
+    Button detalle ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        cotizar = (Button)findViewById(R.id.bnt_cotizar);
+        setContentView(R.layout.activity_detallevehiculo);
 
-        cotizar.setOnClickListener(new View.OnClickListener() {
+        detalle = (Button)findViewById(R.id.bnt_cotizarvehiculo);
+
+        detalle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, cotizar.class);
+                Intent i = new Intent(detallevehiculo.this, mensaje.class);
                 startActivity(i);
             }
         });
     }
-
-
 }
