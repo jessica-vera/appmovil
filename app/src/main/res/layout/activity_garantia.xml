@@ -19,12 +19,12 @@
         android:id="@+id/textView_identifiquese"
         android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:layout_marginBottom="25dp"
         android:text="Identifiquese"
         android:textAlignment="center"
         android:textColor="#1E2738"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="25dp"/>
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editTextTextUser"
