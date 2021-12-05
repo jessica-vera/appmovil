@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">STARMOTORS</string>
+    <string name="user">usuario</string>
+    <string name="password">password</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="inicio">Inicio</string>
     <string-array name="vehiculos">
 
         <item>TOYOTA</item>

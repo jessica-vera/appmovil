@@ -9,7 +9,13 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Appmovilcaso1">
-        <activity android:name=".mensaje"></activity>
+        <activity
+            android:name=".garantia2"
+            android:exported="false" />
+        <activity
+            android:name=".garantia"
+            android:exported="false" />
+        <activity android:name=".mensaje" />
         <activity android:name=".detallevehiculo" />
         <activity android:name=".cotizar" />
         <activity android:name=".MainActivity">

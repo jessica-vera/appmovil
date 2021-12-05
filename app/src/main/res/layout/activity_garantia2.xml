@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/f"
+    tools:context=".garantia2">
+
+    <ImageView
+        android:id="@+id/img_garantia"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_marginBottom="60dp"/>
+    <TextView
+        android:id="@+id/textView_bienvenida"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Bienvenido"
+        android:textAlignment="center"
+        android:textColor="#1E2738"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"/>
+    <TextView
+        android:id="@+id/textView_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="nombre del cliente"
+        android:textAlignment="center"
+        android:textColor="#1E2738"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"/>
+    <TextView
+        android:id="@+id/textView_seleccion"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="seleccione el tipo de daño"
+        android:textAlignment="center"
+        android:textColor="#1E2738"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"/>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/f"
+    tools:context=".garantia">
+
+    <ImageView
+        android:id="@+id/img_garantia"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_marginBottom="60dp"/>
+
+    <TextView
+        android:id="@+id/textView_identifiquese"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Identifiquese"
+        android:textAlignment="center"
+        android:textColor="#1E2738"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="25dp"/>
+
+    <EditText
+        android:id="@+id/editTextTextUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/user"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:drawableLeft="@drawable/usuario"
+        android:drawablePadding="10dp"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/password"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:drawableLeft="@drawable/bloquear"
+        android:drawablePadding="10dp"
+        android:layout_marginBottom="15dp"/>
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:backgroundTint="#E38905"
+        android:hint="@string/ingresar"
+        android:layout_marginBottom="15dp"/>
+
+
+</LinearLayout>
