@@ -8,5 +8,7 @@
 
         <item>TOYOTA</item>
         <item>MAZDA</item>
+        <item></item>
+        <item>MAZDA</item>
     </string-array>
 </resources>
