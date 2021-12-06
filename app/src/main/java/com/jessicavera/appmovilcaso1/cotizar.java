@@ -22,7 +22,7 @@ public class cotizar extends AppCompatActivity {
         enviarcotizacion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent env = new Intent(cotizar.this, detallevehiculo.class);
+                Intent env = new Intent(cotizar.this, mensaje.class);
                 startActivity(env);
             }
         });

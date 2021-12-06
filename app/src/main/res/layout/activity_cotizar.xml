@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txt_nombre"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/f"
@@ -25,8 +26,9 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="205dp"
-        android:layout_height="95dp"
+        android:layout_width="164dp"
+        android:layout_height="65dp"
+        app:layout_constraintBottom_toTopOf="@+id/txt_cedula"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
@@ -44,13 +46,13 @@
         android:hint="Cedula"
         android:inputType="number"
         android:textColorHint="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txt_nombrecotizar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/txt_nombrecotizar"
         android:layout_width="337dp"
         android:layout_height="51dp"
         android:layout_marginStart="12dp"
@@ -60,13 +62,13 @@
         android:hint="Nombre"
         android:inputType="textPersonName"
         android:textColorHint="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintBottom_toTopOf="@+id/txt_apellidocotizar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txt_cedula" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/txt_apellidocotizar"
         android:layout_width="337dp"
         android:layout_height="51dp"
         android:layout_marginStart="12dp"
@@ -76,15 +78,15 @@
         android:hint="Apellido"
         android:inputType="textPersonName"
         android:textColorHint="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/txt_emailcotizar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_nombrecotizar" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="330dp"
-        android:layout_height="43dp"
+        android:id="@+id/txt_emailcotizar"
+        android:layout_width="343dp"
+        android:layout_height="52dp"
         android:layout_marginStart="12dp"
         android:layout_marginEnd="12dp"
         android:backgroundTint="@android:color/darker_gray"
@@ -92,89 +94,94 @@
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:textColorHint="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/editTextPhone"
+        app:layout_constraintBottom_toTopOf="@+id/txt_date"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
-
-    <EditText
-        android:id="@+id/editTextPhone"
-        android:layout_width="330dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="12dp"
-        android:backgroundTint="@android:color/darker_gray"
-        android:ems="10"
-        android:hint="Celular"
-        android:inputType="phone"
-        android:textColorHint="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.44"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="114dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginBottom="5dp"
-        android:text="Me Interesa:"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox"
-        app:layout_constraintEnd_toStartOf="@+id/id_spinner"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_apellidocotizar" />
 
     <Spinner
-        android:id="@+id/id_spinner"
-        android:layout_width="141dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="5dp"
-        android:entries="@array/vehiculos"
+        android:id="@+id/id_spinner_modelo"
+        android:layout_width="325dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="12dp"
+        android:background="@android:color/darker_gray"
+        android:entries="@array/modelo"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toTopOf="@+id/id_spinner_marca"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_date"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/id_spinner_marca"
+        android:layout_width="320dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="476dp"
+        android:layout_marginEnd="35dp"
+        android:background="@android:color/darker_gray"
+        android:entries="@array/marca"
         android:spinnerMode="dialog"
         app:layout_constraintBottom_toTopOf="@+id/checkBox"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/bnt_cotizarvehiculo"
         android:layout_width="139dp"
         android:layout_height="54dp"
         android:layout_marginStart="159dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="159dp"
-        android:layout_marginBottom="5dp"
+        android:layout_marginBottom="35dp"
         android:backgroundTint="#E38905"
-        android:text="Siguiente"
+        android:text="Enviar Cotización"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.76"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/checkBox"
         tools:ignore="MissingConstraints" />
 
     <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="367dp"
-        android:layout_height="71dp"
+        android:id="@+id/box_condicion"
+        android:layout_width="256dp"
+        android:layout_height="87dp"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="12dp"
         android:text='Acepto que "StartMotors" utilice mis datos proporcionados para ponerce en contacto conmigo.'
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="18sp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/bnt_cotizarvehiculo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.763"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_spinner_marca"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/txt_date"
+        android:layout_width="341dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:hint="Fecha Nacimiento"
+        android:inputType="date"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/id_spinner_modelo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_emailcotizar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
