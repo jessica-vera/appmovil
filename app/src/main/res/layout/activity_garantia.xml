@@ -42,7 +42,7 @@
         android:drawableLeft="@drawable/usuario"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="@string/user"
+        android:hint="usuario"
         android:inputType="textPersonName"
         android:textColor="@color/black"
         android:textColorHint="@color/black" />
@@ -57,7 +57,7 @@
         android:drawableLeft="@drawable/bloquear"
         android:drawablePadding="10dp"
         android:ems="10"
-        android:hint="@string/password"
+        android:hint="Contraseña"
         android:inputType="textPassword"
         android:textColor="@color/black"
         android:textColorHint="@color/black" />
@@ -70,7 +70,7 @@
         android:layout_marginRight="30dp"
         android:layout_marginBottom="15dp"
         android:backgroundTint="#E38905"
-        android:hint="@string/ingresar"
+        android:hint="Ingresar"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold" />
