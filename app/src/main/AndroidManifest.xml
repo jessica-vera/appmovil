@@ -8,8 +8,15 @@
         android:label="@string/app_name"
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Appmovilcaso1">
-        <activity android:name=".mensaje"></activity>
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <activity android:name=".menu" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
+        <activity
+            android:name=".garantia2"
+            android:exported="false" />
+        <activity
+            android:name=".garantia"
+            android:exported="false" />
+        <activity android:name=".mensaje" />
         <activity android:name=".detallevehiculo" />
         <activity android:name=".cotizar" />
         <activity android:name=".MainActivity">

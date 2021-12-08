@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Principal">
+        <menu>
+            <item
+                android:id="@+id/home"
+                android:icon="@drawable/ic_home"
+                android:title="Inicio">
+            </item>
+            <item
+                android:id="@+id/solicitud"
+                android:icon="@drawable/ic_solicitus"
+                android:title="Solicitar Garantia">
+            </item>
+            <item
+                android:id="@+id/perfil"
+                android:icon="@drawable/ic_person"
+                android:title="Perfil">
+
+            </item>
+        </menu>
+    </item>
+
+    <item android:title="Configuración">
+        <menu>
+            <item
+                android:id="@+id/ayuda"
+                android:icon="@drawable/ic_help"
+                android:title="Ayuda">
+            </item>
+        </menu>
+    </item>
+
+</menu>
