@@ -8,22 +8,35 @@
     android:background="@drawable/f"
     tools:context=".garantia2">
 
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/colorActivatedHighlight"
+        android:text="@string/textsolicitud"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
     <ImageView
         android:id="@+id/img_garantia"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         app:srcCompat="@drawable/logo"
         android:layout_marginBottom="60dp"/>
+
     <TextView
         android:id="@+id/textView_bienvenida"
         android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
         android:text="Bienvenido"
         android:textAlignment="center"
         android:textColor="#1E2738"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="15dp"/>
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/textView_nombre"
         android:layout_width="match_parent"

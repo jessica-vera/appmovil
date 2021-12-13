@@ -18,7 +18,7 @@ public class garantia extends AppCompatActivity {
         ingreso.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(garantia.this, menu.class);
+                Intent i = new Intent(garantia.this, Home_Activity.class);
                 startActivity(i);
             }
         });

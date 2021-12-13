@@ -48,7 +48,7 @@ public class menu extends AppCompatActivity  implements  NavigationView.OnNaviga
         //carga fragment
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.container, new MenuFragmentss());
+        fragmentTransaction.add(R.id.container, new Inicio_Fragments());
         fragmentTransaction.commit();
     }
 
