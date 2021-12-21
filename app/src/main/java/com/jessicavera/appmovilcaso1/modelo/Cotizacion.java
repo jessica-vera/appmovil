@@ -9,6 +9,7 @@ public class Cotizacion {
     private String nombre;
     private String apellido;
     private String correo;
+    private String clave_correo;
     private String fecha_nacimiento;
     private String modelo;
     private String marca;
@@ -17,12 +18,13 @@ public class Cotizacion {
 
     }
 
-    public Cotizacion(int id_cotizacion, String cedula, String nombre, String apellido, String correo, String fecha_nacimiento, String modelo, String marca) {
+    public Cotizacion(int id_cotizacion, String cedula, String nombre, String apellido, String correo, String clave_correo, String fecha_nacimiento, String modelo, String marca) {
         this.id_cotizacion = id_cotizacion;
         this.cedula = cedula;
         this.nombre = nombre;
         this.apellido = apellido;
         this.correo = correo;
+        this.clave_correo=clave_correo;
         this.fecha_nacimiento = fecha_nacimiento;
         this.modelo = modelo;
         this.marca = marca;
@@ -90,5 +92,13 @@ public class Cotizacion {
 
     public void setMarca(String marca) {
         this.marca = marca;
+    }
+
+    public String getClave_correo() {
+        return clave_correo;
+    }
+
+    public void setClave_correo(String clave_correo) {
+        this.clave_correo = clave_correo;
     }
 }

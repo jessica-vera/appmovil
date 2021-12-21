@@ -26,10 +26,10 @@
     <string name="nombrecotizar">Nombre</string>
     <string name="epellidocotizar">Apellido</string>
     <string name="correocotizar">Correo</string>
+    <string name="contraseñacotizar">Contraseña Correo</string>
     <string name="fechaNcotizar">Fecha Nacimiento</string>
     <string name="bntfechan">Fecha Nacimiento</string>
-    <string name="checkbox">Acepto que "StarMotors" utilice mis datos proporcionados para ponerce en contacto conmigo.</string>string>
-
-    <string name="textsolicitud">SOLICITUD GARANTIA</string>string>
+    <string name="checkbox">Acepto que StarMotors utilice mis datos proporcionados para ponerce en contacto conmigo.</string>
+    <string name="textsolicitud">SOLICITUD GARANTIA</string>
 
 </resources>

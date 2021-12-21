@@ -13,6 +13,7 @@
         android:id="@+id/textView"
         android:layout_width="409dp"
         android:layout_height="47dp"
+        android:layout_marginTop="4dp"
         android:background="#E38905"
         android:text="SOLICITAR COTIZACION"
         android:textAlignment="center"
@@ -24,22 +25,12 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="164dp"
-        android:layout_height="65dp"
-        app:layout_constraintBottom_toTopOf="@+id/txt_cedula"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/logo" />
-
     <EditText
         android:id="@+id/txt_cedula"
-        android:layout_width="340dp"
-        android:layout_height="46dp"
+        android:layout_width="347dp"
+        android:layout_height="48dp"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="12dp"
         android:backgroundTint="@android:color/darker_gray"
         android:ems="10"
@@ -50,14 +41,17 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/txt_nombrecotizar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.595"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/txt_nombrecotizar"
-        android:layout_width="337dp"
-        android:layout_height="51dp"
+        android:layout_width="345dp"
+        android:layout_height="50dp"
         android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="12dp"
         android:backgroundTint="@android:color/darker_gray"
         android:ems="10"
@@ -68,14 +62,17 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/txt_apellidocotizar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_cedula" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_cedula"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/txt_apellidocotizar"
-        android:layout_width="337dp"
-        android:layout_height="51dp"
+        android:layout_width="338dp"
+        android:layout_height="47dp"
         android:layout_marginStart="12dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="12dp"
         android:backgroundTint="@android:color/darker_gray"
         android:ems="10"
@@ -86,15 +83,18 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/txt_emailcotizar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.469"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_nombrecotizar" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_nombrecotizar"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/txt_emailcotizar"
-        android:layout_width="331dp"
-        android:layout_height="45dp"
+        android:layout_width="338dp"
+        android:layout_height="49dp"
         android:layout_marginStart="12dp"
         android:layout_marginEnd="12dp"
+        android:layout_marginBottom="5dp"
         android:backgroundTint="@android:color/darker_gray"
         android:ems="10"
         android:hint="@string/correocotizar"
@@ -102,43 +102,44 @@
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/txt_date"
+        app:layout_constraintBottom_toTopOf="@+id/txt_clavecorreo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintHorizontal_bias="0.435"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_apellidocotizar" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_apellidocotizar"
+        tools:ignore="MissingConstraints" />
 
     <Spinner
         android:id="@+id/id_spinner_modelo"
-        android:layout_width="330dp"
-        android:layout_height="36dp"
+        android:layout_width="336dp"
+        android:layout_height="43dp"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="37dp"
         android:layout_marginEnd="35dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="304dp"
         android:background="@android:color/darker_gray"
         android:entries="@array/modelo"
         android:spinnerMode="dialog"
-        app:layout_constraintBottom_toTopOf="@+id/id_spinner_marca"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.727"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_date"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/bnt_fecha_n"
+        tools:ignore="MissingConstraints" />
 
     <Spinner
         android:id="@+id/id_spinner_marca"
-        android:layout_width="329dp"
-        android:layout_height="35dp"
+        android:layout_width="333dp"
+        android:layout_height="43dp"
         android:layout_marginStart="35dp"
-        android:layout_marginTop="476dp"
+        android:layout_marginTop="480dp"
         android:layout_marginEnd="35dp"
         android:background="@android:color/darker_gray"
         android:entries="@array/marca"
         android:spinnerMode="dialog"
         app:layout_constraintBottom_toTopOf="@+id/checkBox"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintHorizontal_bias="0.625"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -146,72 +147,89 @@
         android:id="@+id/bnt_cotizarvehiculo"
         android:layout_width="139dp"
         android:layout_height="54dp"
-        android:layout_marginStart="159dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="159dp"
-        android:layout_marginBottom="35dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="660dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="17dp"
         android:backgroundTint="#E38905"
         android:text="Enviar Cotización"
         android:textColor="@color/black"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.76"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
 
     <CheckBox
         android:id="@+id/box_condicion"
         android:layout_width="256dp"
         android:layout_height="87dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="12dp"
-        android:buttonTint="?android:attr/colorActivatedHighlight"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="10dp"
+        android:buttonTint="@color/black"
         android:text="@string/checkbox"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="12sp"
         app:layout_constraintBottom_toTopOf="@+id/bnt_cotizarvehiculo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.763"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_spinner_marca"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/txt_date"
-        android:layout_width="198dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginEnd="50dp"
+        android:layout_width="188dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="36dp"
         android:ems="10"
         android:hint="@string/fechaNcotizar"
         android:inputType="date"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/id_spinner_modelo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/bnt_fecha_n"
-        app:layout_constraintTop_toBottomOf="@+id/txt_emailcotizar" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_clavecorreo" />
 
     <Button
         android:id="@+id/bnt_fecha_n"
         android:layout_width="127dp"
         android:layout_height="60dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
         android:backgroundTint="#E38905"
         android:text="@string/bntfechan"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/id_spinner_modelo"
         app:layout_constraintEnd_toStartOf="@+id/txt_date"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_emailcotizar"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_clavecorreo" />
+
+    <EditText
+        android:id="@+id/txt_clavecorreo"
+        android:layout_width="337dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:ems="10"
+        android:hint="@string/contraseñacotizar"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txt_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_emailcotizar" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

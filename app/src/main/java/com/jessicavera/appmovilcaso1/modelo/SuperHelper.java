@@ -72,6 +72,7 @@ public class SuperHelper extends SQLiteOpenHelper {
         SQLi+=",'"+cotizacion.getNombre()+"'";
         SQLi+=",'"+cotizacion.getApellido()+"'";
         SQLi+=",'"+cotizacion.getCorreo()+"'";
+        //SQLi+=",'"+cotizacion.getClave_correo()+"'";
         SQLi+=",'"+cotizacion.getFecha_nacimiento()+"'";
         SQLi+=",'"+cotizacion.getModelo()+"'";
         SQLi+=",'"+cotizacion.getMarca()+"'";
