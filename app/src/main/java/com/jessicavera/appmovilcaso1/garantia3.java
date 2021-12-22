@@ -7,21 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class garantia2 extends AppCompatActivity {
-    Button solicitargarantia;
+public class garantia3 extends AppCompatActivity {
+    Button regresarinicio;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_garantia2);
-        solicitargarantia=findViewById(R.id.btnSolicGarantia);
-
-        solicitargarantia.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_garantia3);
+        regresarinicio=findViewById(R.id.btnRegresoInicio);
+        regresarinicio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(garantia2.this, garantia3.class);
+                Intent i = new Intent(garantia3.this, MainActivity.class);
                 startActivity(i);
             }
         });
     }
-
 }

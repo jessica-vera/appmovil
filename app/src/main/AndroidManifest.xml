@@ -9,7 +9,10 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".Perfil_Activity"></activity>
+        <activity
+            android:name=".garantia3"
+            android:exported="false" />
+        <activity android:name=".Perfil_Activity" />
         <activity android:name=".Home_Activity" />
         <activity
             android:name=".menu"

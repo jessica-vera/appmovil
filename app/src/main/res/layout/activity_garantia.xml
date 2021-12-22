@@ -33,7 +33,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/editTextTextUser"
+        android:id="@+id/txtUsuario"
         android:layout_width="370dp"
         android:layout_height="62dp"
         android:layout_marginLeft="20dp"
@@ -48,7 +48,7 @@
         android:textColorHint="@color/black" />
 
     <EditText
-        android:id="@+id/editTextPassword"
+        android:id="@+id/txtClave"
         android:layout_width="371dp"
         android:layout_height="56dp"
         android:layout_marginLeft="20dp"
@@ -70,7 +70,7 @@
         android:layout_marginRight="30dp"
         android:layout_marginBottom="15dp"
         android:backgroundTint="#E38905"
-        android:hint="Ingresar"
+        android:hint="INICIAR SESION"
         android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold" />

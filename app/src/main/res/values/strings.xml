@@ -10,7 +10,15 @@
     </string-array>
     <string-array name="marca">
         <item>MARCA</item>
-        <item>1</item>
+        <item>Ford</item>
+        <item>Toyota</item>
+        <item>Chevrolet</item>
+    </string-array>
+    <string-array name="falla">
+        <item>Seleccione </item>
+        <item>Partes mecanicas</item>
+        <item>Pintura</item>
+        <item>Sistema electrico</item>
     </string-array>
 
     <string name="cedulaperfil">Cedula</string>
@@ -28,8 +36,11 @@
     <string name="correocotizar">Correo</string>
     <string name="fechaNcotizar">Fecha Nacimiento</string>
     <string name="bntfechan">Fecha Nacimiento</string>
-    <string name="checkbox">Acepto que "StarMotors" utilice mis datos proporcionados para ponerce en contacto conmigo.</string>string>
+    <string name="checkbox">Acepto que "StarMotors" utilice mis datos proporcionados para ponerce en contacto conmigo.</string>
+    string>
 
-    <string name="textsolicitud">SOLICITUD GARANTIA</string>string>
+    <string name="textsolicitud">SOLICITUD GARANTIA</string>
+    <string name="buttonSolicitarGarantia">Button</string>string>
+
 
 </resources>

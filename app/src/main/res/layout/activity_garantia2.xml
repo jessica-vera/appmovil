@@ -2,10 +2,11 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnSolicitarGarantia"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/f"
+    android:orientation="vertical"
     tools:context=".garantia2">
 
     <TextView
@@ -23,8 +24,8 @@
         android:id="@+id/img_garantia"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        app:srcCompat="@drawable/logo"
-        android:layout_marginBottom="60dp"/>
+        android:layout_marginBottom="60dp"
+        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/textView_bienvenida"
@@ -41,27 +42,47 @@
         android:id="@+id/textView_nombre"
         android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
         android:text="nombre del cliente"
         android:textAlignment="center"
         android:textColor="#1E2738"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="15dp"/>
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/textView_seleccion"
         android:layout_width="match_parent"
         android:layout_height="40dp"
+        android:layout_marginBottom="15dp"
         android:text="seleccione el tipo de daño"
         android:textAlignment="center"
         android:textColor="#1E2738"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="15dp"/>
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/id_spinner_falla"
+        android:layout_width="330dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="12dp"
+        android:background="@android:color/darker_gray"
+        android:entries="@array/falla"
+        android:spinnerMode="dialog"
+        app:layout_constraintBottom_toTopOf="@+id/id_spinner_falla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_date"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnSolicGarantia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="enviar prueba" />
+        android:backgroundTint="#E38905"
+        android:text="Solicitar Garantia" />
 
 </LinearLayout>
